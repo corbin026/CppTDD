@@ -1,0 +1,3 @@
+﻿  SoundexTest.cpp
+c:\users\aguacij1\aalto\book\tdd\tdd\tdd.googletest\soundextest.cpp(7): warning C4101: 'soundex': unreferenced local variable
+  TDD.GoogleTest.vcxproj -> C:\Users\aguacij1\Aalto\Book\TDD\TDD\Debug\TDD.GoogleTest.exe
