@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GtaTestDurations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Executable>C:\Users\aguacij1\Aalto\Book\TDD\TDD\Debug\TDD.GoogleTest.exe</Executable>
+  <Executable>C:\Users\aguacij1\Aalto\Book\CppTDD\Debug\TDD.GoogleTest.exe</Executable>
   <TestDurations>
-    <TestDuration Test="SoundexEncoding.RetainSoleLetterOfOneLeterWord" Duration="3078" />
+    <TestDuration Test="SoundexEncoding.RetainSoleLetterOfOneLeterWord" Duration="1" />
+    <TestDuration Test="SoundexEncoding.PadsWithZerosToEnsureThreeDigits" Duration="1" />
+    <TestDuration Test="SoundexEncoding.ReplacesConsonantsWithAppropiateDigits" Duration="1" />
   </TestDurations>
 </GtaTestDurations>
