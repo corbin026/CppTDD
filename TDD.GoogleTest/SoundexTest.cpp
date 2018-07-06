@@ -1,11 +1,24 @@
 #include "pch.h"
-class Soundex {
+#include <iostream>
+#include "Soundex.h"
 
+using namespace testing;
+
+class SoundexEncoding : public Test {
+public:
+	Soundex soundex;
 };
 
-TEST(SoundexEncoding, RetainSoleLetterOfOneLeterWord) {
-	Soundex soundex;
-  EXPECT_EQ(1, 1);
-  EXPECT_TRUE(true);
+TEST_F(SoundexEncoding, RetainSoleLetterOfOneLeterWord) {	
+	auto encoded = soundex.encode("A");
+  ASSERT_EQ(encoded, std::string("A000"));
 }
 
+TEST_F(SoundexEncoding, PadsWithZerosToEnsureThreeDigits) {
+	auto encoded = soundex.encode("I");
+	ASSERT_EQ(encoded, std::string("I000"));
+}
+
+TEST_F(SoundexEncoding, ReplacesConsonantsWithAppropiateDigits) {
+	ASSERT_EQ(soundex.encode("Ab"), std::string("A100"));
+}
